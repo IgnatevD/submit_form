@@ -1,4 +1,7 @@
 /** @format */
+body {
+  background-color: yellow;
+}
 
 div {
   display: flex;
