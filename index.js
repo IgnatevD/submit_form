@@ -11,10 +11,11 @@ form.addEventListener("submit", (e) => {
     elements: { name, telefon, text },
   } = e.currentTarget;
 
-  const masege = `Имя: ${name.value},\n    
-    Телефон: ${telefon.value},\n    
-  Дополнительная информация:${text.value}`;
-  fetch(`${url}${masege}`);
+  const mes = `Имя: ${name.value}, >>>>>>>
+  Телефон: ${telefon.value}, >>>>>>>>
+  Дополнительная информация: ${text.value}`;
+
+  fetch(`${url}${mes}`);
 
   name.value = "";
   telefon.value = "";

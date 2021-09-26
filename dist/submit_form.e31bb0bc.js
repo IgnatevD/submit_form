@@ -129,8 +129,8 @@ form.addEventListener("submit", function (e) {
       name = _e$currentTarget$elem.name,
       telefon = _e$currentTarget$elem.telefon,
       text = _e$currentTarget$elem.text;
-  var masege = "\u0418\u043C\u044F: ".concat(name.value, ",\n    \n    \u0422\u0435\u043B\u0435\u0444\u043E\u043D: ").concat(telefon.value, ",\n    \n  \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F:").concat(text.value);
-  fetch("".concat(url).concat(masege));
+  var mes = "\u0418\u043C\u044F: ".concat(name.value, ", >>>>>>>\n  \u0422\u0435\u043B\u0435\u0444\u043E\u043D: ").concat(telefon.value, ", >>>>>>>>\n  \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F: ").concat(text.value);
+  fetch("".concat(url).concat(mes));
   name.value = "";
   telefon.value = "";
   text.value = "";
