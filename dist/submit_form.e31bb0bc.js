@@ -123,17 +123,19 @@ var token = "2022006455:AAGy0_kcAHVIyRXi3h8HzkJKh_9ckojKP68";
 var chat_id = "-1001515739099";
 var url = "https://api.telegram.org/bot".concat(token, "/sendMessage?chat_id=").concat(chat_id, "&parse_mode=html&text=");
 var form = document.querySelector(".form");
+var post = document.querySelector(".post");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   var _e$currentTarget$elem = e.currentTarget.elements,
       name = _e$currentTarget$elem.name,
       telefon = _e$currentTarget$elem.telefon,
       text = _e$currentTarget$elem.text;
-  var mes = "\u0418\u043C\u044F: ".concat(name.value, ", >>>>>>>\n  \u0422\u0435\u043B\u0435\u0444\u043E\u043D: ").concat(telefon.value, ", >>>>>>>>\n  \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F: ").concat(text.value);
+  var mes = "\u0418\u043C\u044F: ".concat(name.value, ",\n  \u0422\u0435\u043B\u0435\u0444\u043E\u043D: ").concat(telefon.value, ",\n  \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F: ").concat(text.value);
   fetch("".concat(url).concat(mes));
-  name.value = "";
-  telefon.value = "";
-  text.value = "";
+  form.classList.replace("form", "notForm");
+  post.classList.replace("post", "newPost"); // name.value = "";
+  // telefon.value = "";
+  // text.value = "";
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -163,7 +165,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58559" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60601" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

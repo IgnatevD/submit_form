@@ -51,5 +51,15 @@ input:not(:placeholder-shown) ~ label {
   background-color: red;
 }
 
+.post {
+  display: none;
+}
+.newPost {
+  display: block;
+}
+.notForm {
+  display: none;
+}
+
 
 /*# sourceMappingURL=/main.af46ece4.css.map */

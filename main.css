@@ -1,7 +1,4 @@
 /** @format */
-body {
-  background-color: yellow;
-}
 
 div {
   display: flex;
@@ -52,4 +49,14 @@ input:not(:placeholder-shown) ~ label {
 
 .buttonForm:hover {
   background-color: red;
+}
+
+.post {
+  display: none;
+}
+.newPost {
+  display: block;
+}
+.notForm {
+  display: none;
 }
